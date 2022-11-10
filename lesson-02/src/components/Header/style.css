@@ -1,0 +1,20 @@
+.header {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+	padding: 20px 0;
+}
+
+.header > .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header .left {
+	display: flex;
+	gap: 40px;
+}
+.header .right {
+	display: flex;
+	gap: 40px;
+	align-items: center;
+}

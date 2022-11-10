@@ -1,0 +1,14 @@
+.status {
+	padding: 4px 10px;
+	border-radius: 4px;
+	text-transform: capitalize;
+}
+
+.status.online {
+	background: green;
+	color: white;
+}
+.status.offline {
+	background: orange;
+	color: white;
+}
