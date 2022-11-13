@@ -1,0 +1,39 @@
+.nav {
+	&__menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		&__item {
+			padding: 9px 15px;
+			border-radius: 5px;
+
+			&:hover {
+				background: #0c4fded4;
+				color: #ffffff;
+			}
+		}
+
+		&__itemActive {
+			@extend .nav__menu__item;
+
+			background: #0c4dde;
+			color: #ffffff;
+		}
+
+		&__link {
+			display: flex;
+			gap: 10px;
+			text-decoration: none;
+			color: inherit;
+
+			&__icon {
+				width: 24px;
+			}
+
+			&__text {
+				font-size: 20px;
+			}
+		}
+	}
+}

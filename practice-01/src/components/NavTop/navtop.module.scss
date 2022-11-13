@@ -1,0 +1,17 @@
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		height: 40px;
+	}
+
+	&__lang {
+		height: 28px;
+		border: 1px solid #eaeaea;
+		border-radius: 5px;
+		cursor: pointer;
+		padding: 0.4rem 0.6rem;
+	}
+}
