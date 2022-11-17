@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.app{
+    display: grid;
+    grid-template-columns: minmax(300px, 400px) 1fr 1fr ;
+    height: 100vh;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+
+}

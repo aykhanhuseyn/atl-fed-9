@@ -1,0 +1,21 @@
+.siteby{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid #dee2e6;
+    margin-top: 16px;
+    padding-top: 16px;
+    &__text{
+        display: inline-block;
+    }
+    &__link{
+        text-decoration: none;
+        color: rgba(0,0,0,.5);
+        transition: .3s linear;
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-bottom: 1px solid  rgba(0,0,0,.5);
+        }
+    }
+}

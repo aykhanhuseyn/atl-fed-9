@@ -1,0 +1,15 @@
+.profile {
+	&__title {
+		display: inline-block;
+		font-size: 16px;
+		color: rgba(0, 0, 0, 0.6);
+		margin-bottom: 12px;
+	}
+
+	&__menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 40px;
+	}
+}

@@ -1,0 +1,8 @@
+.navigation{
+    padding: 15px;
+    border-right: 1px solid #eaeaea;
+}
+footer{
+    position: absolute;
+    bottom: 16px;
+}
