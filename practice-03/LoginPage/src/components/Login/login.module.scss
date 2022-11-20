@@ -1,0 +1,83 @@
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__matteo {
+		width: 610px;
+		height: 730px;
+	}
+	.leftSide {
+		width: 600px;
+		height: 745px;
+		background-color: #fff;
+		margin: 0 10px;
+		padding: 50px 100px;
+
+		&__texth1 {
+			font-weight: 800;
+			font-size: 56px;
+		}
+
+		&__ml {
+			margin-left: 160px;
+			// margin-bottom: 20px;
+		}
+
+		&__mb {
+			margin-bottom: 20px;
+		}
+
+		&__form {
+			display: block;
+			width: 390px;
+			height: 45px;
+			padding: 20px;
+			background-color: #f5f5f5;
+			border-radius: 4px;
+			border: none;
+			outline: none;
+			margin: 20px 0;
+			color: #383838;
+			font-size: 14px;
+		}
+
+		&__button {
+			height: 48px;
+			width: 384px;
+			left: 102px;
+			top: 442px;
+			border-radius: 4px;
+			padding: 12px 24px 12px 24px;
+			background-color: #e8b006;
+			border: none;
+			outline: none;
+		}
+
+		&__or {
+			text-align: center;
+		}
+
+		&__buttonGoogle {
+			display: block;
+			height: 48px;
+			width: 384px;
+			border: 1px solid #186bad;
+			text-align: center;
+			line-height: 48px;
+			color: #186bad;
+			border-radius: 6px;
+		}
+		&__buttonFacebook {
+			display: block;
+			height: 48px;
+			width: 384px;
+			border: 1px solid #186bad;
+			text-align: center;
+			line-height: 48px;
+			color: #186bad;
+			border-radius: 6px;
+		}
+	}
+}
