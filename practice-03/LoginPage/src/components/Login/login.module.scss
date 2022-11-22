@@ -1,3 +1,10 @@
+// .container {}
+
+// .container__matteo {}
+// .container__matteo:hover > .container__matteo__span {
+// 	background-color: #186bad;
+// }
+
 .container {
 	height: 100vh;
 	display: flex;
@@ -7,6 +14,11 @@
 	&__matteo {
 		width: 610px;
 		height: 730px;
+
+		// &:hover > &__span {
+		// 	background-color: #186bad;
+		// 	transform: translateY(20px);
+		// }
 	}
 	.leftSide {
 		width: 600px;
