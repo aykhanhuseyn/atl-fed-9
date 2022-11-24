@@ -1,0 +1,3 @@
+export const UNSPLASH_API_KEY = 'RX0P_nkO2s9BxTc2AI1juFjUMzwVrhPuPk6e0A78HjM';
+export const UNSPLASH_SECRET_KEY =
+	'Y8KtTQv4q9XnVXell3DNBLUsXb4_Rqg0v7UudD5iRwg';
