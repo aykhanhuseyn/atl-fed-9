@@ -1,15 +1,4 @@
-import loadable from '@loadable/component';
-import { Routes, Route, Link } from 'react-router-dom';
-import { LangController, Loading } from './components';
-import { Home, NotFound, Products } from './pages';
-
-// const About = lazy(() => import('./pages/About'))
-const LoadableAbout = loadable(
-	() => import('./pages/About').then((page) => page.About),
-	{
-		fallback: <Loading />,
-	}
-);
+import { Link, Outlet } from 'react-router-dom';
 
 function App() {
 	return (
@@ -26,17 +15,7 @@ function App() {
 				<Link to='products'>Products</Link>
 				<Link to='404'>404</Link>
 			</div>
-			{/* <Suspense fallback={<Loading />}> */}
-			<Routes>
-				<Route path=':lang/*' element={<LangController />}>
-					<Route index element={<Home />} />
-					<Route path='about' element={<LoadableAbout />} />
-					<Route path='products/*' element={<Products />} />
-					<Route path='*' element={<NotFound />} />
-				</Route>
-				<Route path='/' element={<LangController />} />
-			</Routes>
-			{/* </Suspense> */}
+			<Outlet />
 		</div>
 	);
 }

@@ -1,29 +1,20 @@
-import { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 import { unsplash } from '../../api';
 
 export const View = () => {
-	const [img, setImg] = useState();
-	useEffect(() => {
-		(async () => {
-			const data = await unsplash.photos.getRandom();
+	const data = useLoaderData();
 
-			console.log(data.response.alt_description);
-			setImg({ src: data.response.urls.full, alt: data.response.alt_description });
-		})();
-	}, []);
+	console.log(data);
 
 	return (
 		<div>
 			<h1>View</h1>
-			{img && <img {...img} />}
+			{data && <img width='100%' src={data.urls.raw} alt='unsplash' />}
 		</div>
 	);
 };
 
-// export const viewLoader = () => unsplash.search('shider-man');
-// export const viewLoader = async ({ param }) => {
-// 	const data = await unsplash.photos.getRandom();
-
-// 	console.log({ data, param });
-// 	return data;
-// };
+export const viewLoader = async ({ param }) => {
+	const data = await unsplash.photos.getRandom();
+	return data.response;
+};

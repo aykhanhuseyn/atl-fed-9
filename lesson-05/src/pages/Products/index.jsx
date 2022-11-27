@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
-import { View, viewLoader } from './View';
+import { Outlet, Link } from 'react-router-dom';
 
 export const Products = () => {
 	return (
@@ -16,11 +15,9 @@ export const Products = () => {
 				<Link to='view/1'>Products slash ID</Link>
 				<Link to='create'>Products create new product</Link>
 			</div>
-			<Routes>
-				<Route index element={<div>list</div>} />
-				<Route path='create' element={<div>create</div>} />
-				<Route path='view/:id' element={<View />} />
-			</Routes>
+			<Outlet />
 		</div>
 	);
 };
+
+export * from './View';
