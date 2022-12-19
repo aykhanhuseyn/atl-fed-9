@@ -1,0 +1,36 @@
+Arguments: 
+  /Users/aniverse/.nvm/versions/node/v18.12.1/bin/node /Users/aniverse/.nvm/versions/node/v18.12.1/bin/yarn add @redux/toolkit react-redux
+
+PATH: 
+  /Users/aniverse/.nvm/versions/node/v18.12.1/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/bin:/Users/aniverse/Library/Android/sdk/emulator:/Users/aniverse/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@redux%2ftoolkit: Not found
+      at params.callback [as _callback] (/Users/aniverse/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/Users/aniverse/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/Users/aniverse/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/Users/aniverse/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
